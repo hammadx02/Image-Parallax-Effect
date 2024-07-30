@@ -44,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   SizedBox(height: 50),
                   Text(
-                    'Vintag Classic !',
+                    'Art Street !',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 45,
@@ -61,6 +61,14 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   SizedBox(height: 10),
+                  Text(
+                    'Vincent Willem van Gogh was a Dutch post-impressionist painter who posthumously became one of the most famous and influential figures in the history of Western art.',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontStyle: FontStyle.italic,
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -87,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                   height: 370,
                                   fit: BoxFit.cover,
                                   alignment:
-                                      // Alignment(-pageOffset.abs() + i, 0),
+                                      Alignment(-pageOffset.abs() + i, 0),
                                 ),
                               ),
                               Positioned(
