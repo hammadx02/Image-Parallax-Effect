@@ -46,7 +46,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   Text(
                     'Art Street !',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 45,
                       letterSpacing: 2,
                     ),
@@ -55,14 +55,14 @@ class _HomeScreenState extends State<HomeScreen> {
                   Text(
                     '30 March 1853',
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                       fontSize: 20,
-                      // fontStyle: FontStyle.italic,
+                      fontStyle: FontStyle.italic,
                     ),
                   ),
                   SizedBox(height: 10),
                   Text(
-                    'Vincent Willem van Gogh was a Dutch post-impressionist painter who posthumously became one of the most famous and influential figures in the history of Western art.',
+                    'Art Street showcases a vibrant collection of works from emerging and established artists, creating a dynamic hub of creativity and inspiration for all art enthusiasts.',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 15,
