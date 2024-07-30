@@ -30,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
         width: MediaQuery.of(context).size.width,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/bg.png"),
+            image: AssetImage("assets/bg.jpg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -75,6 +75,16 @@ class _HomeScreenState extends State<HomeScreen> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const Padding(
+                  padding: EdgeInsets.only(left: 20, bottom: 20),
+                  child: Text(
+                    'Highlight Paintings',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20,
+                    ),
+                  ),
+                ),
                 Container(
                   height: 400,
                   padding: const EdgeInsets.only(bottom: 30),
