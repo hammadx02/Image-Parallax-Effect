@@ -1,4 +1,3 @@
-// ignore: file_names
 List<Map> paintings = [
   {
     'image': 'assets/painting6.jpeg',

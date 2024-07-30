@@ -71,43 +71,44 @@ class _HomeScreenState extends State<HomeScreen> {
                   height: 400,
                   padding: const EdgeInsets.only(bottom: 30),
                   child: PageView.builder(
-                      itemCount: paintings.length,
-                      controller: pageController,
-                      itemBuilder: (context, i) {
-                        return Transform.scale(
-                          scale: 1,
-                          child: Container(
-                            padding: const EdgeInsets.only(right: 20),
-                            child: Stack(
-                              children: [
-                                ClipRRect(
-                                  borderRadius: BorderRadius.circular(15),
-                                  child: Image.asset(
-                                    paintings[i]['image'],
-                                    height: 370,
-                                    fit: BoxFit.cover,
-                                    alignment:
-                                        Alignment(-pageOffset.abs() + i, 0),
+                    itemCount: paintings.length,
+                    controller: pageController,
+                    itemBuilder: (context, i) {
+                      return Transform.scale(
+                        scale: 1,
+                        child: Container(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Stack(
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(15),
+                                child: Image.asset(
+                                  paintings[i]['image'],
+                                  height: 370,
+                                  fit: BoxFit.cover,
+                                  alignment:
+                                      // Alignment(-pageOffset.abs() + i, 0),
+                                ),
+                              ),
+                              Positioned(
+                                left: 10,
+                                bottom: 20,
+                                right: 10,
+                                child: Text(
+                                  paintings[i]['name'],
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 35,
+                                    fontStyle: FontStyle.normal,
                                   ),
                                 ),
-                                Positioned(
-                                  left: 10,
-                                  bottom: 20,
-                                  right: 10,
-                                  child: Text(
-                                    paintings[i]['name'],
-                                    style: const TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 35,
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
+                              )
+                            ],
                           ),
-                        );
-                      }),
+                        ),
+                      );
+                    },
+                  ),
                 )
               ],
             ),
@@ -117,4 +118,3 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
-
